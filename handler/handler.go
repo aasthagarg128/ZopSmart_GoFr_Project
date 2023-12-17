@@ -3,8 +3,8 @@ package handlers
 import (
 	"fmt"
 
-	"ZopSmart_GoFr_Project/models"
-	"ZopSmart_GoFr_Project/stores"
+	"github.com/aasthagarg128/ZopSmart_GoFr_Project/models"
+	"github.com/aasthagarg128/ZopSmart_GoFr_Project/stores"
 	"gofr.dev/pkg/gofr"
 )
 
@@ -61,4 +61,8 @@ func (h handler) Delete(ctx *gofr.Context) (interface{}, error) {
 	}
 
 	return fmt.Sprintf("%v books deleted!", deleteCount), nil
+}
+
+func (h handler) Ping(ctx *gofr.Context) (interface{}, error) {
+	return "pong", nil
 }

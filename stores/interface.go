@@ -1,7 +1,7 @@
 package stores
 
 import (
-	"ZopSmart_GoFr_Project/models"
+	"github.com/aasthagarg128/ZopSmart_GoFr_Project/models"
 	"gofr.dev/pkg/gofr"
 )
 
